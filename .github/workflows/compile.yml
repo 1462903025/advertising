@@ -23,10 +23,10 @@ jobs:
       fail-fast: false
       matrix:
         # Compile on Linux
-        os:
-          - ubuntu-20.04
+        os: [ubuntu-latest, windows-latest]
 
         include:
+          - os: windows-latest
           - os: ubuntu-20.04
             os_short: linux
     steps:
